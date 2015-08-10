@@ -1,0 +1,14 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="DE1_SOC_golden_top">
+		<CBX_INST_ENTRY INSTANCE_NAME="|DE1_SOC_golden_top|DE1_SoC_QSYS:u0|DE1_SoC_QSYS_hps_0:hps_0|DE1_SoC_QSYS_hps_0_hps_io:hps_io|DE1_SoC_QSYS_hps_0_hps_io_border:border|hps_sdram:hps_sdram_inst|hps_sdram_p0:p0|hps_sdram_p0_acv_hard_memphy:umemphy|hps_sdram_p0_acv_hard_io_pads:uio_pads|hps_sdram_p0_acv_hard_addr_cmd_pads:uaddr_cmd_pads|altddio_out:clock_gen[0].umem_ck_pad" CBX_FILE_NAME="ddio_out_uqe.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|DE1_SOC_golden_top|DE1_SoC_QSYS:u0|DE1_SoC_QSYS_jtag_uart:jtag_uart|DE1_SoC_QSYS_jtag_uart_scfifo_w:the_DE1_SoC_QSYS_jtag_uart_scfifo_w|scfifo:wfifo" CBX_FILE_NAME="scfifo_3291.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|DE1_SOC_golden_top|DE1_SoC_QSYS:u0|alt_vipitc131_IS2Vid:alt_vip_itc_0|alt_vipitc131_common_fifo:input_fifo|dcfifo:input_fifo" CBX_FILE_NAME="dcfifo_ppq1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|DE1_SOC_golden_top|DE1_SoC_QSYS:u0|alt_vipvfr131_vfr:alt_vip_vfr_0|alt_vipvfr131_prc:prc|alt_vipvfr131_prc_read_master:read_master|alt_vipvfr131_common_avalon_mm_bursting_master_fifo:master_fifo|alt_vipvfr131_common_general_fifo:\read_used_gen_gen:rdata_fifo|alt_vipvfr131_common_ram_fifo:\dual_clock_or_large_gen:ram_fifo|altsyncram:ram" CBX_FILE_NAME="altsyncram_88s1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|DE1_SOC_golden_top|DE1_SoC_QSYS:u0|alt_vipvfr131_vfr:alt_vip_vfr_0|alt_vipvfr131_prc:prc|alt_vipvfr131_prc_read_master:read_master|alt_vipvfr131_common_avalon_mm_bursting_master_fifo:master_fifo|alt_vipvfr131_common_general_fifo:cmd_fifo|alt_vipvfr131_common_ram_fifo:\dual_clock_or_large_gen:ram_fifo|altsyncram:ram" CBX_FILE_NAME="altsyncram_eor1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|DE1_SOC_golden_top|DE1_SoC_QSYS:u0|DE1_SoC_QSYS_jtag_uart:jtag_uart|DE1_SoC_QSYS_jtag_uart_scfifo_r:the_DE1_SoC_QSYS_jtag_uart_scfifo_r|scfifo:rfifo" CBX_FILE_NAME="scfifo_3291.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|DE1_SOC_golden_top|DE1_SoC_QSYS:u0|DE1_SoC_QSYS_onchip_memory2:onchip_memory2|altsyncram:the_altsyncram" CBX_FILE_NAME="altsyncram_emj1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|DE1_SOC_golden_top|DE1_SoC_QSYS:u0|TERASIC_MULTI_TOUCH:terasic_multi_touch_0|touch_fifo:touch_fifo_inst|scfifo:scfifo_component" CBX_FILE_NAME="scfifo_jad1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|DE1_SOC_golden_top|lvds_lcd:lcd0|altlvds_tx:ALTLVDS_TX_component" CBX_FILE_NAME="lvds_lcd_lvds_tx1.v"/>
+	</PROJECT>
+</LOG_ROOT>

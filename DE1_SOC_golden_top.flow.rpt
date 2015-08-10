@@ -1,0 +1,297 @@
+Flow report for DE1_SOC_golden_top
+Tue Nov 25 09:15:09 2014
+Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Flow Summary
+  3. Flow Settings
+  4. Flow Non-Default Global Settings
+  5. Flow Elapsed Time
+  6. Flow OS Summary
+  7. Flow Log
+  8. Flow Messages
+  9. Flow Suppressed Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++------------------------------------------------------------------------------+
+; Flow Summary                                                                 ;
++---------------------------------+--------------------------------------------+
+; Flow Status                     ; Successful - Tue Nov 25 09:14:17 2014      ;
+; Quartus II 64-Bit Version       ; 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
+; Revision Name                   ; DE1_SOC_golden_top                         ;
+; Top-level Entity Name           ; DE1_SOC_golden_top                         ;
+; Family                          ; Cyclone V                                  ;
+; Device                          ; 5CSEMA5F31C6                               ;
+; Timing Models                   ; Preliminary                                ;
+; Logic utilization (in ALMs)     ; 3,754 / 32,070 ( 12 % )                    ;
+; Total registers                 ; 7458                                       ;
+; Total pins                      ; 141 / 457 ( 31 % )                         ;
+; Total virtual pins              ; 0                                          ;
+; Total block memory bits         ; 1,582,170 / 4,065,280 ( 39 % )             ;
+; Total DSP Blocks                ; 0 / 87 ( 0 % )                             ;
+; Total HSSI RX PCSs              ; 0                                          ;
+; Total HSSI PMA RX Deserializers ; 0                                          ;
+; Total HSSI TX PCSs              ; 0                                          ;
+; Total HSSI TX Channels          ; 0                                          ;
+; Total PLLs                      ; 2 / 6 ( 33 % )                             ;
+; Total DLLs                      ; 1 / 4 ( 25 % )                             ;
++---------------------------------+--------------------------------------------+
+
+
++-----------------------------------------+
+; Flow Settings                           ;
++-------------------+---------------------+
+; Option            ; Setting             ;
++-------------------+---------------------+
+; Start date & time ; 11/25/2014 09:10:29 ;
+; Main task         ; Compilation         ;
+; Revision Name     ; DE1_SOC_golden_top  ;
++-------------------+---------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                                                                                                  ;
++-------------------------------------+----------------------------------------------------------------------------+---------------+---------------------------------------------------+------------+
+; Assignment Name                     ; Value                                                                      ; Default Value ; Entity Name                                       ; Section Id ;
++-------------------------------------+----------------------------------------------------------------------------+---------------+---------------------------------------------------+------------+
+; COMPILER_SIGNATURE_ID               ; 181261313713514.141692462907952                                            ; --            ; --                                                ; --         ;
+; ECO_REGENERATE_REPORT               ; On                                                                         ; Off           ; --                                                ; --         ;
+; ENABLE_SIGNALTAP                    ; On                                                                         ; --            ; --                                                ; --         ;
+; FITTER_EFFORT                       ; Standard Fit                                                               ; Auto Fit      ; --                                                ; --         ;
+; HPS_ISW_FILE                        ; DE1_SoC_QSYS/synthesis/submodules/sequencer/alt_types.pre.h                ; --            ; DE1_SoC_QSYS_hps_0_hps_io_border                  ; --         ;
+; HPS_ISW_FILE                        ; DE1_SoC_QSYS/synthesis/submodules/sequencer/emif.pre.xml                   ; --            ; DE1_SoC_QSYS_hps_0_hps_io_border                  ; --         ;
+; HPS_ISW_FILE                        ; DE1_SoC_QSYS/synthesis/submodules/sequencer/sdram_io.pre.h                 ; --            ; DE1_SoC_QSYS_hps_0_hps_io_border                  ; --         ;
+; HPS_ISW_FILE                        ; DE1_SoC_QSYS/synthesis/submodules/sequencer/sequencer.pre.c                ; --            ; DE1_SoC_QSYS_hps_0_hps_io_border                  ; --         ;
+; HPS_ISW_FILE                        ; DE1_SoC_QSYS/synthesis/submodules/sequencer/sequencer.pre.h                ; --            ; DE1_SoC_QSYS_hps_0_hps_io_border                  ; --         ;
+; HPS_ISW_FILE                        ; DE1_SoC_QSYS/synthesis/submodules/sequencer/sequencer_auto.pre.h           ; --            ; DE1_SoC_QSYS_hps_0_hps_io_border                  ; --         ;
+; HPS_ISW_FILE                        ; DE1_SoC_QSYS/synthesis/submodules/sequencer/sequencer_auto_ac_init.pre.c   ; --            ; DE1_SoC_QSYS_hps_0_hps_io_border                  ; --         ;
+; HPS_ISW_FILE                        ; DE1_SoC_QSYS/synthesis/submodules/sequencer/sequencer_auto_inst_init.pre.c ; --            ; DE1_SoC_QSYS_hps_0_hps_io_border                  ; --         ;
+; HPS_ISW_FILE                        ; DE1_SoC_QSYS/synthesis/submodules/sequencer/sequencer_defines.pre.h        ; --            ; DE1_SoC_QSYS_hps_0_hps_io_border                  ; --         ;
+; HPS_ISW_FILE                        ; DE1_SoC_QSYS/synthesis/submodules/sequencer/system.pre.h                   ; --            ; DE1_SoC_QSYS_hps_0_hps_io_border                  ; --         ;
+; HPS_ISW_FILE                        ; DE1_SoC_QSYS/synthesis/submodules/sequencer/tclrpt.pre.c                   ; --            ; DE1_SoC_QSYS_hps_0_hps_io_border                  ; --         ;
+; HPS_ISW_FILE                        ; DE1_SoC_QSYS/synthesis/submodules/sequencer/tclrpt.pre.h                   ; --            ; DE1_SoC_QSYS_hps_0_hps_io_border                  ; --         ;
+; HPS_ISW_FILE                        ; DE1_SoC_QSYS/synthesis/submodules/hps.pre.xml                              ; --            ; DE1_SoC_QSYS_hps_0_hps_io_border                  ; --         ;
+; HPS_PARTITION                       ; On                                                                         ; --            ; DE1_SoC_QSYS_hps_0_hps_io_border                  ; --         ;
+; IP_TOOL_ENV                         ; Qsys                                                                       ; --            ; DE1_SoC_QSYS                                      ; --         ;
+; IP_TOOL_ENV                         ; Qsys                                                                       ; --            ; DE1_SoC_QSYS_hps_0                                ; --         ;
+; IP_TOOL_ENV                         ; Qsys                                                                       ; --            ; DE1_SoC_QSYS_hps_0_hps_io                         ; --         ;
+; IP_TOOL_ENV                         ; Qsys                                                                       ; --            ; DE1_SoC_QSYS_irq_mapper                           ; --         ;
+; IP_TOOL_ENV                         ; Qsys                                                                       ; --            ; DE1_SoC_QSYS_irq_mapper_001                       ; --         ;
+; IP_TOOL_ENV                         ; Qsys                                                                       ; --            ; DE1_SoC_QSYS_jtag_uart                            ; --         ;
+; IP_TOOL_ENV                         ; Qsys                                                                       ; --            ; DE1_SoC_QSYS_mm_interconnect_0                    ; --         ;
+; IP_TOOL_ENV                         ; Qsys                                                                       ; --            ; DE1_SoC_QSYS_mm_interconnect_0_addr_router        ; --         ;
+; IP_TOOL_ENV                         ; Qsys                                                                       ; --            ; DE1_SoC_QSYS_mm_interconnect_0_cmd_xbar_demux     ; --         ;
+; IP_TOOL_ENV                         ; Qsys                                                                       ; --            ; DE1_SoC_QSYS_mm_interconnect_0_cmd_xbar_mux       ; --         ;
+; IP_TOOL_ENV                         ; Qsys                                                                       ; --            ; DE1_SoC_QSYS_mm_interconnect_0_cmd_xbar_mux_004   ; --         ;
+; IP_TOOL_ENV                         ; Qsys                                                                       ; --            ; DE1_SoC_QSYS_mm_interconnect_0_id_router          ; --         ;
+; IP_TOOL_ENV                         ; Qsys                                                                       ; --            ; DE1_SoC_QSYS_mm_interconnect_0_id_router_004      ; --         ;
+; IP_TOOL_ENV                         ; Qsys                                                                       ; --            ; DE1_SoC_QSYS_mm_interconnect_0_rsp_xbar_demux     ; --         ;
+; IP_TOOL_ENV                         ; Qsys                                                                       ; --            ; DE1_SoC_QSYS_mm_interconnect_0_rsp_xbar_demux_004 ; --         ;
+; IP_TOOL_ENV                         ; Qsys                                                                       ; --            ; DE1_SoC_QSYS_mm_interconnect_0_rsp_xbar_mux       ; --         ;
+; IP_TOOL_ENV                         ; Qsys                                                                       ; --            ; DE1_SoC_QSYS_mm_interconnect_1                    ; --         ;
+; IP_TOOL_ENV                         ; Qsys                                                                       ; --            ; DE1_SoC_QSYS_mm_interconnect_1_addr_router        ; --         ;
+; IP_TOOL_ENV                         ; Qsys                                                                       ; --            ; DE1_SoC_QSYS_mm_interconnect_1_cmd_xbar_demux     ; --         ;
+; IP_TOOL_ENV                         ; Qsys                                                                       ; --            ; DE1_SoC_QSYS_mm_interconnect_1_cmd_xbar_mux       ; --         ;
+; IP_TOOL_ENV                         ; Qsys                                                                       ; --            ; DE1_SoC_QSYS_mm_interconnect_1_id_router          ; --         ;
+; IP_TOOL_ENV                         ; Qsys                                                                       ; --            ; DE1_SoC_QSYS_mm_interconnect_1_rsp_xbar_demux     ; --         ;
+; IP_TOOL_ENV                         ; Qsys                                                                       ; --            ; DE1_SoC_QSYS_mm_interconnect_1_rsp_xbar_mux       ; --         ;
+; IP_TOOL_ENV                         ; Qsys                                                                       ; --            ; DE1_SoC_QSYS_onchip_memory2                       ; --         ;
+; IP_TOOL_ENV                         ; Qsys                                                                       ; --            ; DE1_SoC_QSYS_pll_sys                              ; --         ;
+; IP_TOOL_ENV                         ; Qsys                                                                       ; --            ; DE1_SoC_QSYS_sysid                                ; --         ;
+; IP_TOOL_ENV                         ; Qsys                                                                       ; --            ; DE1_SoC_QSYS_timer                                ; --         ;
+; IP_TOOL_ENV                         ; Qsys                                                                       ; --            ; alt_vipitc131_IS2Vid                              ; --         ;
+; IP_TOOL_ENV                         ; Qsys                                                                       ; --            ; alt_vipvfr131_vfr                                 ; --         ;
+; IP_TOOL_ENV                         ; Qsys                                                                       ; --            ; altera_avalon_sc_fifo                             ; --         ;
+; IP_TOOL_ENV                         ; Qsys                                                                       ; --            ; altera_avalon_st_handshake_clock_crosser          ; --         ;
+; IP_TOOL_ENV                         ; Qsys                                                                       ; --            ; altera_avalon_st_pipeline_stage                   ; --         ;
+; IP_TOOL_ENV                         ; Qsys                                                                       ; --            ; altera_merlin_axi_master_ni                       ; --         ;
+; IP_TOOL_ENV                         ; Qsys                                                                       ; --            ; altera_merlin_axi_slave_ni                        ; --         ;
+; IP_TOOL_ENV                         ; Qsys                                                                       ; --            ; altera_merlin_burst_adapter                       ; --         ;
+; IP_TOOL_ENV                         ; Qsys                                                                       ; --            ; altera_merlin_master_agent                        ; --         ;
+; IP_TOOL_ENV                         ; Qsys                                                                       ; --            ; altera_merlin_master_translator                   ; --         ;
+; IP_TOOL_ENV                         ; Qsys                                                                       ; --            ; altera_merlin_slave_agent                         ; --         ;
+; IP_TOOL_ENV                         ; Qsys                                                                       ; --            ; altera_merlin_slave_translator                    ; --         ;
+; IP_TOOL_ENV                         ; Qsys                                                                       ; --            ; altera_merlin_traffic_limiter                     ; --         ;
+; IP_TOOL_ENV                         ; Qsys                                                                       ; --            ; altera_merlin_width_adapter                       ; --         ;
+; IP_TOOL_ENV                         ; Qsys                                                                       ; --            ; altera_reset_controller                           ; --         ;
+; IP_TOOL_NAME                        ; Qsys                                                                       ; --            ; DE1_SoC_QSYS                                      ; --         ;
+; IP_TOOL_NAME                        ; altera_hps                                                                 ; --            ; DE1_SoC_QSYS_hps_0                                ; --         ;
+; IP_TOOL_NAME                        ; altera_hps_io                                                              ; --            ; DE1_SoC_QSYS_hps_0_hps_io                         ; --         ;
+; IP_TOOL_NAME                        ; altera_irq_mapper                                                          ; --            ; DE1_SoC_QSYS_irq_mapper                           ; --         ;
+; IP_TOOL_NAME                        ; altera_irq_mapper                                                          ; --            ; DE1_SoC_QSYS_irq_mapper_001                       ; --         ;
+; IP_TOOL_NAME                        ; altera_avalon_jtag_uart                                                    ; --            ; DE1_SoC_QSYS_jtag_uart                            ; --         ;
+; IP_TOOL_NAME                        ; altera_merlin_interconnect_wrapper                                         ; --            ; DE1_SoC_QSYS_mm_interconnect_0                    ; --         ;
+; IP_TOOL_NAME                        ; altera_merlin_router                                                       ; --            ; DE1_SoC_QSYS_mm_interconnect_0_addr_router        ; --         ;
+; IP_TOOL_NAME                        ; altera_merlin_demultiplexer                                                ; --            ; DE1_SoC_QSYS_mm_interconnect_0_cmd_xbar_demux     ; --         ;
+; IP_TOOL_NAME                        ; altera_merlin_multiplexer                                                  ; --            ; DE1_SoC_QSYS_mm_interconnect_0_cmd_xbar_mux       ; --         ;
+; IP_TOOL_NAME                        ; altera_merlin_multiplexer                                                  ; --            ; DE1_SoC_QSYS_mm_interconnect_0_cmd_xbar_mux_004   ; --         ;
+; IP_TOOL_NAME                        ; altera_merlin_router                                                       ; --            ; DE1_SoC_QSYS_mm_interconnect_0_id_router          ; --         ;
+; IP_TOOL_NAME                        ; altera_merlin_router                                                       ; --            ; DE1_SoC_QSYS_mm_interconnect_0_id_router_004      ; --         ;
+; IP_TOOL_NAME                        ; altera_merlin_demultiplexer                                                ; --            ; DE1_SoC_QSYS_mm_interconnect_0_rsp_xbar_demux     ; --         ;
+; IP_TOOL_NAME                        ; altera_merlin_demultiplexer                                                ; --            ; DE1_SoC_QSYS_mm_interconnect_0_rsp_xbar_demux_004 ; --         ;
+; IP_TOOL_NAME                        ; altera_merlin_multiplexer                                                  ; --            ; DE1_SoC_QSYS_mm_interconnect_0_rsp_xbar_mux       ; --         ;
+; IP_TOOL_NAME                        ; altera_merlin_interconnect_wrapper                                         ; --            ; DE1_SoC_QSYS_mm_interconnect_1                    ; --         ;
+; IP_TOOL_NAME                        ; altera_merlin_router                                                       ; --            ; DE1_SoC_QSYS_mm_interconnect_1_addr_router        ; --         ;
+; IP_TOOL_NAME                        ; altera_merlin_demultiplexer                                                ; --            ; DE1_SoC_QSYS_mm_interconnect_1_cmd_xbar_demux     ; --         ;
+; IP_TOOL_NAME                        ; altera_merlin_multiplexer                                                  ; --            ; DE1_SoC_QSYS_mm_interconnect_1_cmd_xbar_mux       ; --         ;
+; IP_TOOL_NAME                        ; altera_merlin_router                                                       ; --            ; DE1_SoC_QSYS_mm_interconnect_1_id_router          ; --         ;
+; IP_TOOL_NAME                        ; altera_merlin_demultiplexer                                                ; --            ; DE1_SoC_QSYS_mm_interconnect_1_rsp_xbar_demux     ; --         ;
+; IP_TOOL_NAME                        ; altera_merlin_multiplexer                                                  ; --            ; DE1_SoC_QSYS_mm_interconnect_1_rsp_xbar_mux       ; --         ;
+; IP_TOOL_NAME                        ; altera_avalon_onchip_memory2                                               ; --            ; DE1_SoC_QSYS_onchip_memory2                       ; --         ;
+; IP_TOOL_NAME                        ; altera_pll                                                                 ; --            ; DE1_SoC_QSYS_pll_sys                              ; --         ;
+; IP_TOOL_NAME                        ; altera_avalon_sysid_qsys                                                   ; --            ; DE1_SoC_QSYS_sysid                                ; --         ;
+; IP_TOOL_NAME                        ; altera_avalon_timer                                                        ; --            ; DE1_SoC_QSYS_timer                                ; --         ;
+; IP_TOOL_NAME                        ; alt_vip_itc                                                                ; --            ; alt_vipitc131_IS2Vid                              ; --         ;
+; IP_TOOL_NAME                        ; alt_vip_vfr                                                                ; --            ; alt_vipvfr131_vfr                                 ; --         ;
+; IP_TOOL_NAME                        ; altera_avalon_sc_fifo                                                      ; --            ; altera_avalon_sc_fifo                             ; --         ;
+; IP_TOOL_NAME                        ; altera_avalon_st_handshake_clock_crosser                                   ; --            ; altera_avalon_st_handshake_clock_crosser          ; --         ;
+; IP_TOOL_NAME                        ; altera_avalon_st_pipeline_stage                                            ; --            ; altera_avalon_st_pipeline_stage                   ; --         ;
+; IP_TOOL_NAME                        ; altera_merlin_axi_master_ni                                                ; --            ; altera_merlin_axi_master_ni                       ; --         ;
+; IP_TOOL_NAME                        ; altera_merlin_axi_slave_ni                                                 ; --            ; altera_merlin_axi_slave_ni                        ; --         ;
+; IP_TOOL_NAME                        ; altera_merlin_burst_adapter                                                ; --            ; altera_merlin_burst_adapter                       ; --         ;
+; IP_TOOL_NAME                        ; altera_merlin_master_agent                                                 ; --            ; altera_merlin_master_agent                        ; --         ;
+; IP_TOOL_NAME                        ; altera_merlin_master_translator                                            ; --            ; altera_merlin_master_translator                   ; --         ;
+; IP_TOOL_NAME                        ; altera_merlin_slave_agent                                                  ; --            ; altera_merlin_slave_agent                         ; --         ;
+; IP_TOOL_NAME                        ; altera_merlin_slave_translator                                             ; --            ; altera_merlin_slave_translator                    ; --         ;
+; IP_TOOL_NAME                        ; altera_merlin_traffic_limiter                                              ; --            ; altera_merlin_traffic_limiter                     ; --         ;
+; IP_TOOL_NAME                        ; altera_merlin_width_adapter                                                ; --            ; altera_merlin_width_adapter                       ; --         ;
+; IP_TOOL_NAME                        ; altera_reset_controller                                                    ; --            ; altera_reset_controller                           ; --         ;
+; IP_TOOL_VERSION                     ; 13.1                                                                       ; --            ; DE1_SoC_QSYS                                      ; --         ;
+; IP_TOOL_VERSION                     ; 13.1                                                                       ; --            ; DE1_SoC_QSYS_hps_0                                ; --         ;
+; IP_TOOL_VERSION                     ; 13.1                                                                       ; --            ; DE1_SoC_QSYS_hps_0_hps_io                         ; --         ;
+; IP_TOOL_VERSION                     ; 13.1                                                                       ; --            ; DE1_SoC_QSYS_irq_mapper                           ; --         ;
+; IP_TOOL_VERSION                     ; 13.1                                                                       ; --            ; DE1_SoC_QSYS_irq_mapper_001                       ; --         ;
+; IP_TOOL_VERSION                     ; 13.1                                                                       ; --            ; DE1_SoC_QSYS_jtag_uart                            ; --         ;
+; IP_TOOL_VERSION                     ; 13.1                                                                       ; --            ; DE1_SoC_QSYS_mm_interconnect_0                    ; --         ;
+; IP_TOOL_VERSION                     ; 13.1                                                                       ; --            ; DE1_SoC_QSYS_mm_interconnect_0_addr_router        ; --         ;
+; IP_TOOL_VERSION                     ; 13.1                                                                       ; --            ; DE1_SoC_QSYS_mm_interconnect_0_cmd_xbar_demux     ; --         ;
+; IP_TOOL_VERSION                     ; 13.1                                                                       ; --            ; DE1_SoC_QSYS_mm_interconnect_0_cmd_xbar_mux       ; --         ;
+; IP_TOOL_VERSION                     ; 13.1                                                                       ; --            ; DE1_SoC_QSYS_mm_interconnect_0_cmd_xbar_mux_004   ; --         ;
+; IP_TOOL_VERSION                     ; 13.1                                                                       ; --            ; DE1_SoC_QSYS_mm_interconnect_0_id_router          ; --         ;
+; IP_TOOL_VERSION                     ; 13.1                                                                       ; --            ; DE1_SoC_QSYS_mm_interconnect_0_id_router_004      ; --         ;
+; IP_TOOL_VERSION                     ; 13.1                                                                       ; --            ; DE1_SoC_QSYS_mm_interconnect_0_rsp_xbar_demux     ; --         ;
+; IP_TOOL_VERSION                     ; 13.1                                                                       ; --            ; DE1_SoC_QSYS_mm_interconnect_0_rsp_xbar_demux_004 ; --         ;
+; IP_TOOL_VERSION                     ; 13.1                                                                       ; --            ; DE1_SoC_QSYS_mm_interconnect_0_rsp_xbar_mux       ; --         ;
+; IP_TOOL_VERSION                     ; 13.1                                                                       ; --            ; DE1_SoC_QSYS_mm_interconnect_1                    ; --         ;
+; IP_TOOL_VERSION                     ; 13.1                                                                       ; --            ; DE1_SoC_QSYS_mm_interconnect_1_addr_router        ; --         ;
+; IP_TOOL_VERSION                     ; 13.1                                                                       ; --            ; DE1_SoC_QSYS_mm_interconnect_1_cmd_xbar_demux     ; --         ;
+; IP_TOOL_VERSION                     ; 13.1                                                                       ; --            ; DE1_SoC_QSYS_mm_interconnect_1_cmd_xbar_mux       ; --         ;
+; IP_TOOL_VERSION                     ; 13.1                                                                       ; --            ; DE1_SoC_QSYS_mm_interconnect_1_id_router          ; --         ;
+; IP_TOOL_VERSION                     ; 13.1                                                                       ; --            ; DE1_SoC_QSYS_mm_interconnect_1_rsp_xbar_demux     ; --         ;
+; IP_TOOL_VERSION                     ; 13.1                                                                       ; --            ; DE1_SoC_QSYS_mm_interconnect_1_rsp_xbar_mux       ; --         ;
+; IP_TOOL_VERSION                     ; 13.1                                                                       ; --            ; DE1_SoC_QSYS_onchip_memory2                       ; --         ;
+; IP_TOOL_VERSION                     ; 13.1                                                                       ; --            ; DE1_SoC_QSYS_pll_sys                              ; --         ;
+; IP_TOOL_VERSION                     ; 13.1                                                                       ; --            ; DE1_SoC_QSYS_sysid                                ; --         ;
+; IP_TOOL_VERSION                     ; 13.1                                                                       ; --            ; DE1_SoC_QSYS_timer                                ; --         ;
+; IP_TOOL_VERSION                     ; 13.1                                                                       ; --            ; alt_vipitc131_IS2Vid                              ; --         ;
+; IP_TOOL_VERSION                     ; 13.1                                                                       ; --            ; alt_vipvfr131_vfr                                 ; --         ;
+; IP_TOOL_VERSION                     ; 13.1                                                                       ; --            ; altera_avalon_sc_fifo                             ; --         ;
+; IP_TOOL_VERSION                     ; 13.1                                                                       ; --            ; altera_avalon_st_handshake_clock_crosser          ; --         ;
+; IP_TOOL_VERSION                     ; 13.1                                                                       ; --            ; altera_avalon_st_pipeline_stage                   ; --         ;
+; IP_TOOL_VERSION                     ; 13.1                                                                       ; --            ; altera_merlin_axi_master_ni                       ; --         ;
+; IP_TOOL_VERSION                     ; 13.1                                                                       ; --            ; altera_merlin_axi_slave_ni                        ; --         ;
+; IP_TOOL_VERSION                     ; 13.1                                                                       ; --            ; altera_merlin_burst_adapter                       ; --         ;
+; IP_TOOL_VERSION                     ; 13.1                                                                       ; --            ; altera_merlin_master_agent                        ; --         ;
+; IP_TOOL_VERSION                     ; 13.1                                                                       ; --            ; altera_merlin_master_translator                   ; --         ;
+; IP_TOOL_VERSION                     ; 13.1                                                                       ; --            ; altera_merlin_slave_agent                         ; --         ;
+; IP_TOOL_VERSION                     ; 13.1                                                                       ; --            ; altera_merlin_slave_translator                    ; --         ;
+; IP_TOOL_VERSION                     ; 13.1                                                                       ; --            ; altera_merlin_traffic_limiter                     ; --         ;
+; IP_TOOL_VERSION                     ; 13.1                                                                       ; --            ; altera_merlin_width_adapter                       ; --         ;
+; IP_TOOL_VERSION                     ; 13.1                                                                       ; --            ; altera_reset_controller                           ; --         ;
+; MAX_CORE_JUNCTION_TEMP              ; 85                                                                         ; --            ; --                                                ; --         ;
+; MIN_CORE_JUNCTION_TEMP              ; 0                                                                          ; --            ; --                                                ; --         ;
+; MISC_FILE                           ; DE1_SoC_QSYS/synthesis/../../DE1_SoC_QSYS.cmp                              ; --            ; --                                                ; --         ;
+; MISC_FILE                           ; DE1_SoC_QSYS/synthesis/../../C                                             ; --            ; --                                                ; --         ;
+; MISC_FILE                           ; DE1_SoC_QSYS/synthesis/DE1_SoC_QSYS_hps_0_hps.svd                          ; --            ; --                                                ; --         ;
+; MISC_FILE                           ; DE1_SoC_QSYS/synthesis/../../DE1_SoC_QSYS.qsys                             ; --            ; --                                                ; --         ;
+; MISC_FILE                           ; DE1_SoC_QSYS/synthesis/submodules/sequencer/alt_types.pre.h                ; --            ; --                                                ; --         ;
+; MISC_FILE                           ; DE1_SoC_QSYS/synthesis/submodules/sequencer/emif.pre.xml                   ; --            ; --                                                ; --         ;
+; MISC_FILE                           ; DE1_SoC_QSYS/synthesis/submodules/sequencer/sdram_io.pre.h                 ; --            ; --                                                ; --         ;
+; MISC_FILE                           ; DE1_SoC_QSYS/synthesis/submodules/sequencer/sequencer.pre.c                ; --            ; --                                                ; --         ;
+; MISC_FILE                           ; DE1_SoC_QSYS/synthesis/submodules/sequencer/sequencer.pre.h                ; --            ; --                                                ; --         ;
+; MISC_FILE                           ; DE1_SoC_QSYS/synthesis/submodules/sequencer/sequencer_auto.pre.h           ; --            ; --                                                ; --         ;
+; MISC_FILE                           ; DE1_SoC_QSYS/synthesis/submodules/sequencer/sequencer_auto_ac_init.pre.c   ; --            ; --                                                ; --         ;
+; MISC_FILE                           ; DE1_SoC_QSYS/synthesis/submodules/sequencer/sequencer_auto_inst_init.pre.c ; --            ; --                                                ; --         ;
+; MISC_FILE                           ; DE1_SoC_QSYS/synthesis/submodules/sequencer/sequencer_defines.pre.h        ; --            ; --                                                ; --         ;
+; MISC_FILE                           ; DE1_SoC_QSYS/synthesis/submodules/sequencer/system.pre.h                   ; --            ; --                                                ; --         ;
+; MISC_FILE                           ; DE1_SoC_QSYS/synthesis/submodules/sequencer/tclrpt.pre.c                   ; --            ; --                                                ; --         ;
+; MISC_FILE                           ; DE1_SoC_QSYS/synthesis/submodules/sequencer/tclrpt.pre.h                   ; --            ; --                                                ; --         ;
+; MISC_FILE                           ; DE1_SoC_QSYS/synthesis/submodules/hps.pre.xml                              ; --            ; --                                                ; --         ;
+; OPTIMIZATION_TECHNIQUE              ; Speed                                                                      ; Balanced      ; --                                                ; --         ;
+; OUTPUT_IO_TIMING_FAR_END_VMEAS      ; Half Signal Swing                                                          ; --            ; --                                                ; --         ;
+; OUTPUT_IO_TIMING_FAR_END_VMEAS      ; Half Signal Swing                                                          ; --            ; --                                                ; --         ;
+; OUTPUT_IO_TIMING_NEAR_END_VMEAS     ; Half Vccio                                                                 ; --            ; --                                                ; --         ;
+; OUTPUT_IO_TIMING_NEAR_END_VMEAS     ; Half Vccio                                                                 ; --            ; --                                                ; --         ;
+; PARTITION_COLOR                     ; 16764057                                                                   ; --            ; --                                                ; Top        ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING                                                      ; --            ; --                                                ; Top        ;
+; PARTITION_NETLIST_TYPE              ; SOURCE                                                                     ; --            ; --                                                ; Top        ;
+; POWER_BOARD_THERMAL_MODEL           ; None (CONSERVATIVE)                                                        ; --            ; --                                                ; --         ;
+; POWER_PRESET_COOLING_SOLUTION       ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW                                      ; --            ; --                                                ; --         ;
+; SLD_FILE                            ; DE1_SoC_QSYS/synthesis/DE1_SoC_QSYS.regmap                                 ; --            ; --                                                ; --         ;
+; SLD_FILE                            ; DE1_SoC_QSYS/synthesis/DE1_SoC_QSYS.debuginfo                              ; --            ; --                                                ; --         ;
+; SLD_INFO                            ; QSYS_NAME DE1_SoC_QSYS HAS_SOPCINFO 1 GENERATION_ID 1416924553             ; --            ; DE1_SoC_QSYS                                      ; --         ;
+; SOPCINFO_FILE                       ; DE1_SoC_QSYS/synthesis/../../DE1_SoC_QSYS.sopcinfo                         ; --            ; --                                                ; --         ;
+; SYNTHESIS_ONLY_QIP                  ; On                                                                         ; --            ; --                                                ; --         ;
+; USE_SIGNALTAP_FILE                  ; stp1.stp                                                                   ; --            ; --                                                ; --         ;
++-------------------------------------+----------------------------------------------------------------------------+---------------+---------------------------------------------------+------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------+
+; Flow Elapsed Time                                                                                                             ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Analysis & Synthesis      ; 00:00:34     ; 1.1                     ; 991 MB              ; 00:00:35                           ;
+; Fitter                    ; 00:02:43     ; 2.0                     ; 3085 MB             ; 00:04:07                           ;
+; Assembler                 ; 00:00:19     ; 1.0                     ; 746 MB              ; 00:00:20                           ;
+; TimeQuest Timing Analyzer ; 00:00:50     ; 2.2                     ; 1587 MB             ; 00:01:16                           ;
+; Total                     ; 00:04:26     ; --                      ; --                  ; 00:06:18                           ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+
+
++----------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                        ;
++---------------------------+------------------+-----------+------------+----------------+
+; Module Name               ; Machine Hostname ; OS Name   ; OS Version ; Processor type ;
++---------------------------+------------------+-----------+------------+----------------+
+; Analysis & Synthesis      ; yun              ; Windows 7 ; 6.2        ; x86_64         ;
+; Fitter                    ; yun              ; Windows 7 ; 6.2        ; x86_64         ;
+; Assembler                 ; yun              ; Windows 7 ; 6.2        ; x86_64         ;
+; TimeQuest Timing Analyzer ; yun              ; Windows 7 ; 6.2        ; x86_64         ;
++---------------------------+------------------+-----------+------------+----------------+
+
+
+------------
+; Flow Log ;
+------------
+quartus_map --read_settings_files=on --write_settings_files=off DE1_SOC_golden_top -c DE1_SOC_golden_top
+quartus_fit --read_settings_files=off --write_settings_files=off DE1_SOC_golden_top -c DE1_SOC_golden_top
+quartus_asm --read_settings_files=off --write_settings_files=off DE1_SOC_golden_top -c DE1_SOC_golden_top
+quartus_sta DE1_SOC_golden_top -c DE1_SOC_golden_top
+
+
+

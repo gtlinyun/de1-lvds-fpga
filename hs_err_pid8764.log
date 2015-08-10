@@ -1,0 +1,222 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  EXCEPTION_ACCESS_VIOLATION (0xc0000005) at pc=0x6d7f9cf9, pid=8764, tid=8788
+#
+# JRE version: 6.0_23-b05
+# Java VM: Java HotSpot(TM) Client VM (19.0-b09 mixed mode windows-x86 )
+# Problematic frame:
+# V  [jvm.dll+0x9cf9]
+#
+# If you would like to submit a bug report, please visit:
+#   http://java.sun.com/webapps/bugreport/crash.jsp
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x27823400):  VMThread [stack: 0x27a90000,0x27ae0000] [id=8788]
+
+siginfo: ExceptionCode=0xc0000005, reading address 0x036002c0
+
+Registers:
+EAX=0x00000001, EBX=0x242f1c1c, ECX=0x2a1e5881, EDX=0x03600258
+ESP=0x27adf8d0, EBP=0x27adf8d0, ESI=0x242ecf78, EDI=0x2a1e5881
+EIP=0x6d7f9cf9, EFLAGS=0x00010297
+
+Register to memory mapping:
+
+EAX=0x00000001
+0x00000001 is pointing to unknown location
+
+EBX=0x242f1c1c
+{constant pool} 
+ - klass: {other class}
+ - cache: 0x00000000
+ -   1 :  : 8257536
+ -   2 :  : 
+[error occurred during error reporting (printing registers, top of stack, instructions near pc), id 0xc0000005]
+
+Stack: [0x27a90000,0x27ae0000],  sp=0x27adf8d0,  free space=318k
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+V  [jvm.dll+0x9cf9]
+V  [jvm.dll+0x9d67]
+V  [jvm.dll+0x9d9d]
+V  [jvm.dll+0xa0b3e]
+V  [jvm.dll+0x162ea3]
+V  [jvm.dll+0x163272]
+V  [jvm.dll+0x1ee654]
+V  [jvm.dll+0x1ac4e9]
+V  [jvm.dll+0xcc5c0]
+V  [jvm.dll+0xcce30]
+V  [jvm.dll+0xcd2e0]
+V  [jvm.dll+0xd134a]
+V  [jvm.dll+0x1e4752]
+V  [jvm.dll+0xcc018]
+V  [jvm.dll+0x804bb]
+V  [jvm.dll+0x200e4b]
+V  [jvm.dll+0x203e33]
+V  [jvm.dll+0x20310e]
+V  [jvm.dll+0x203430]
+V  [jvm.dll+0x203832]
+V  [jvm.dll+0x18843c]
+C  [msvcr71.dll+0x9565]
+C  [KERNEL32.DLL+0x1919f]
+C  [ntdll.dll+0x50bbb]
+C  [ntdll.dll+0x50b91]
+
+VM_Operation (0x2db0f1b0): GenCollectForAllocation, mode: safepoint, requested by thread 0x286b6400
+
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+  0x286b5800 JavaThread "Tcl Isolation Thread" daemon [_thread_blocked, id=3880, stack(0x2d3e0000,0x2d430000)]
+  0x286b6400 JavaThread "Thread-7" [_thread_blocked, id=1832, stack(0x2dac0000,0x2db10000)]
+  0x287c2000 JavaThread "D3D Screen Updater" daemon [_thread_blocked, id=8820, stack(0x2c1a0000,0x2c1f0000)]
+  0x286af400 JavaThread "Image Fetcher 0" daemon [_thread_blocked, id=8836, stack(0x002a0000,0x002f0000)]
+  0x28910000 JavaThread "TimerQueue" daemon [_thread_blocked, id=2992, stack(0x2bf60000,0x2bfb0000)]
+  0x28567800 JavaThread "Image Fetcher 3" daemon [_thread_blocked, id=4972, stack(0x2be60000,0x2beb0000)]
+  0x284d3800 JavaThread "AWT-EventQueue-0" [_thread_blocked, id=5292, stack(0x2a210000,0x2a260000)]
+  0x28493c00 JavaThread "Command Watcher" daemon [_thread_blocked, id=7172, stack(0x29dc0000,0x29e10000)]
+  0x2848d800 JavaThread "AWT-Windows" daemon [_thread_in_native, id=6448, stack(0x28d50000,0x28da0000)]
+  0x2848d000 JavaThread "AWT-Shutdown" [_thread_blocked, id=2700, stack(0x28cc0000,0x28d10000)]
+  0x2848cc00 JavaThread "Java2D Disposer" daemon [_thread_blocked, id=5208, stack(0x28c30000,0x28c80000)]
+  0x27839800 JavaThread "Low Memory Detector" daemon [_thread_blocked, id=5320, stack(0x27df0000,0x27e40000)]
+  0x27838800 JavaThread "CompilerThread0" daemon [_thread_blocked, id=7764, stack(0x27d60000,0x27db0000)]
+  0x27837400 JavaThread "Attach Listener" daemon [_thread_blocked, id=4080, stack(0x27cd0000,0x27d20000)]
+  0x27835400 JavaThread "Signal Dispatcher" daemon [_thread_blocked, id=4460, stack(0x27c40000,0x27c90000)]
+  0x27826c00 JavaThread "Finalizer" daemon [_thread_blocked, id=8812, stack(0x27bb0000,0x27c00000)]
+  0x27825800 JavaThread "Reference Handler" daemon [_thread_blocked, id=8748, stack(0x27b20000,0x27b70000)]
+  0x0028a800 JavaThread "main" [_thread_blocked, id=8792, stack(0x00390000,0x003e0000)]
+
+Other Threads:
+=>0x27823400 VMThread [stack: 0x27a90000,0x27ae0000] [id=8788]
+  0x2785ac00 WatcherThread [stack: 0x27e80000,0x27ed0000] [id=7944]
+
+VM state:at safepoint (normal execution)
+
+VM Mutex/Monitor currently owned by a thread:  ([mutex/lock_event])
+[0x00289480] Threads_lock - owner thread: 0x27823400
+[0x00289dc8] Heap_lock - owner thread: 0x286b6400
+
+Heap
+ def new generation   total 10368K, used 1087K [0x04200000, 0x04d30000, 0x0e8a0000)
+  eden space 9280K,   0% used [0x04200000, 0x04200000, 0x04b10000)
+  from space 1088K,  99% used [0x04c20000, 0x04d2fff8, 0x04d30000)
+  to   space 1088K,   0% used [0x04b10000, 0x04b10000, 0x04c20000)
+ tenured generation   total 22900K, used 22846K [0x0e8a0000, 0x0fefd000, 0x23600000)
+   the space 22900K,  99% used [0x0e8a0000, 0x0feef8a8, 0x0feefa00, 0x0fefd000)
+ compacting perm gen  total 30464K, used 30216K [0x23600000, 0x253c0000, 0x27600000)
+   the space 30464K,  99% used [0x23600000, 0x25382200, 0x25382200, 0x253c0000)
+No shared spaces configured.
+
+Dynamic libraries:
+0x00400000 - 0x00424000 	C:\altera\13.1\quartus\bin\jre\bin\java.exe
+0x773d0000 - 0x77537000 	C:\WINDOWS\SYSTEM32\ntdll.dll
+0x76b50000 - 0x76c90000 	C:\WINDOWS\SYSTEM32\KERNEL32.DLL
+0x76a40000 - 0x76b10000 	C:\WINDOWS\SYSTEM32\KERNELBASE.dll
+0x74440000 - 0x744d9000 	C:\WINDOWS\system32\apphelp.dll
+0x73d70000 - 0x73fc9000 	C:\WINDOWS\AppPatch\AcGenral.DLL
+0x74e00000 - 0x74ebe000 	C:\WINDOWS\SYSTEM32\msvcrt.dll
+0x75080000 - 0x750be000 	C:\WINDOWS\SYSTEM32\sechost.dll
+0x74de0000 - 0x74dfd000 	C:\WINDOWS\SYSTEM32\SspiCli.dll
+0x77280000 - 0x772c1000 	C:\WINDOWS\SYSTEM32\SHLWAPI.dll
+0x73fd0000 - 0x740ab000 	C:\WINDOWS\SYSTEM32\UxTheme.dll
+0x76650000 - 0x7679c000 	C:\WINDOWS\SYSTEM32\USER32.dll
+0x76450000 - 0x76557000 	C:\WINDOWS\SYSTEM32\GDI32.dll
+0x73d50000 - 0x73d70000 	C:\WINDOWS\SYSTEM32\WINMM.dll
+0x73d30000 - 0x73d42000 	C:\WINDOWS\SYSTEM32\samcli.dll
+0x77170000 - 0x7727c000 	C:\WINDOWS\SYSTEM32\ole32.dll
+0x76820000 - 0x768b5000 	C:\WINDOWS\SYSTEM32\OLEAUT32.dll
+0x73cd0000 - 0x73ce5000 	C:\WINDOWS\SYSTEM32\MSACM32.dll
+0x74d60000 - 0x74d68000 	C:\WINDOWS\SYSTEM32\VERSION.dll
+0x750c0000 - 0x76277000 	C:\WINDOWS\SYSTEM32\SHELL32.dll
+0x747b0000 - 0x747c9000 	C:\WINDOWS\SYSTEM32\USERENV.dll
+0x73d10000 - 0x73d28000 	C:\WINDOWS\SYSTEM32\dwmapi.dll
+0x73b80000 - 0x73cca000 	C:\WINDOWS\SYSTEM32\urlmon.dll
+0x762c0000 - 0x76338000 	C:\WINDOWS\SYSTEM32\ADVAPI32.dll
+0x74d00000 - 0x74d5e000 	C:\WINDOWS\SYSTEM32\WINSPOOL.DRV
+0x74170000 - 0x74184000 	C:\WINDOWS\SYSTEM32\MPR.dll
+0x770c0000 - 0x77170000 	C:\WINDOWS\SYSTEM32\RPCRT4.dll
+0x74dd0000 - 0x74dd9000 	C:\WINDOWS\SYSTEM32\CRYPTBASE.dll
+0x76e40000 - 0x76f8e000 	C:\WINDOWS\SYSTEM32\combase.dll
+0x73b60000 - 0x73b80000 	C:\WINDOWS\SYSTEM32\WINMMBASE.dll
+0x74930000 - 0x7493e000 	C:\WINDOWS\SYSTEM32\profapi.dll
+0x738f0000 - 0x73b22000 	C:\WINDOWS\SYSTEM32\iertutil.dll
+0x73640000 - 0x73816000 	C:\WINDOWS\SYSTEM32\WININET.dll
+0x74d70000 - 0x74dc2000 	C:\WINDOWS\SYSTEM32\bcryptPrimitives.dll
+0x76b10000 - 0x76b4a000 	C:\WINDOWS\SYSTEM32\cfgmgr32.dll
+0x74ce0000 - 0x74cff000 	C:\WINDOWS\SYSTEM32\DEVOBJ.dll
+0x74b50000 - 0x74bc6000 	C:\WINDOWS\SYSTEM32\SHCORE.DLL
+0x772d0000 - 0x772f5000 	C:\WINDOWS\system32\IMM32.DLL
+0x76fc0000 - 0x770b7000 	C:\WINDOWS\SYSTEM32\MSCTF.dll
+0x7c340000 - 0x7c396000 	C:\altera\13.1\quartus\bin\jre\bin\msvcr71.dll
+0x6d7f0000 - 0x6da9c000 	C:\altera\13.1\quartus\bin\jre\bin\client\jvm.dll
+0x6d700000 - 0x6d722000 	C:\altera\13.1\quartus\bin\jre\bin\splashscreen.dll
+0x6d7a0000 - 0x6d7ac000 	C:\altera\13.1\quartus\bin\jre\bin\verify.dll
+0x6d320000 - 0x6d33f000 	C:\altera\13.1\quartus\bin\jre\bin\java.dll
+0x6d280000 - 0x6d288000 	C:\altera\13.1\quartus\bin\jre\bin\hpi.dll
+0x76440000 - 0x76446000 	C:\WINDOWS\SYSTEM32\PSAPI.DLL
+0x74140000 - 0x74147000 	c:\PROGRA~2\mcafee\SITEAD~1\saHook.dll
+0x6d7e0000 - 0x6d7ef000 	C:\altera\13.1\quartus\bin\jre\bin\zip.dll
+0x745c0000 - 0x745c9000 	C:\WINDOWS\SYSTEM32\kernel.appcore.dll
+0x6d000000 - 0x6d14a000 	C:\altera\13.1\quartus\bin\jre\bin\awt.dll
+0x720d0000 - 0x722b6000 	C:\WINDOWS\WinSxS\x86_microsoft.windows.common-controls_6595b64144ccf1df_6.0.9600.17031_none_a9efdb8b01377ea7\COMCTL32.dll
+0x6d230000 - 0x6d27f000 	C:\altera\13.1\quartus\bin\jre\bin\fontmanager.dll
+0x5b040000 - 0x5b045000 	C:\altera\13.1\quartus\bin\sld_utiljni.dll
+0x65860000 - 0x6591f000 	C:\WINDOWS\SYSTEM32\MSVCR100.dll
+0x59280000 - 0x59367000 	C:\altera\13.1\quartus\bin\tcl85.dll
+0x763f0000 - 0x7643d000 	C:\WINDOWS\SYSTEM32\WS2_32.dll
+0x76340000 - 0x76347000 	C:\WINDOWS\SYSTEM32\NSI.dll
+0x595a0000 - 0x59638000 	C:\altera\13.1\quartus\bin\ccl_sqlite3.dll
+0x5b030000 - 0x5b03d000 	C:\altera\13.1\quartus\bin\ccl_sqlite3_jdbc_jni_bridge.dll
+0x767a0000 - 0x7681d000 	C:\WINDOWS\SYSTEM32\clbcatq.dll
+0x6d600000 - 0x6d613000 	C:\altera\13.1\quartus\bin\jre\bin\net.dll
+0x733f0000 - 0x73435000 	C:\WINDOWS\system32\mswsock.dll
+0x74ad0000 - 0x74aee000 	C:\WINDOWS\SYSTEM32\iphlpapi.dll
+0x74940000 - 0x74948000 	C:\WINDOWS\SYSTEM32\WINNSI.DLL
+0x73460000 - 0x73472000 	C:\WINDOWS\SYSTEM32\dhcpcsvc6.DLL
+0x73440000 - 0x73453000 	C:\WINDOWS\SYSTEM32\dhcpcsvc.DLL
+0x72720000 - 0x728d8000 	C:\WINDOWS\SYSTEM32\d3d9.dll
+0x5a210000 - 0x5b012000 	C:\WINDOWS\SYSTEM32\nvd3dum.dll
+0x74b10000 - 0x74b4e000 	C:\WINDOWS\system32\powrprof.dll
+0x59cc0000 - 0x59df7000 	C:\Program Files (x86)\NVIDIA Corporation\3D Vision\nvSCPAPI.dll
+0x74ec0000 - 0x7506d000 	C:\WINDOWS\SYSTEM32\SETUPAPI.dll
+0x59a00000 - 0x59cbb000 	C:\WINDOWS\system32\nvapi.dll
+0x76280000 - 0x762b8000 	C:\WINDOWS\SYSTEM32\WINTRUST.dll
+0x768c0000 - 0x76a3f000 	C:\WINDOWS\SYSTEM32\CRYPT32.dll
+0x76fb0000 - 0x76fbe000 	C:\WINDOWS\SYSTEM32\MSASN1.dll
+0x72000000 - 0x72062000 	C:\WINDOWS\system32\dxgi.dll
+0x6d620000 - 0x6d629000 	C:\altera\13.1\quartus\bin\jre\bin\nio.dll
+0x73cf0000 - 0x73d08000 	C:\WINDOWS\SYSTEM32\CRYPTSP.dll
+0x73b30000 - 0x73b5f000 	C:\WINDOWS\system32\rsaenh.dll
+0x73830000 - 0x7384d000 	C:\WINDOWS\SYSTEM32\bcrypt.dll
+0x5b020000 - 0x5b027000 	C:\altera\13.1\quartus\bin\tcl_jni_bridge.dll
+
+VM Arguments:
+jvm_args: -Xmx500m -XX:+UseSerialGC 
+java_command: com.altera.ipedit.QsysEditorApp --project-dir=C:/altera/13.1/project/MTL_HPS-test/ --system-info=DEVICE_FAMILY=Cyclone V --system-info=DEVICE=5CSEMA5F31C6 --system-info=DEVICE_SPEEDGRADE=6 --host-controller
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+JAVA_HOME=C:\Program Files (x86)\Java\jre7
+PATH=C:/altera/13.1/quartus/bin;c:\altera\13.1\quartus\bin64\;C:\Users\ylin\WinAVR-20100110\bin;C:\Users\ylin\WinAVR-20100110\utils\bin;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Java\jre7\bin;C:\qnx660\host\win32\x86\usr\bin;C:\QNX650\host\win32\x86\usr\bin;C:\Program Files (x86)\QNX Software Systems\bin;C:\Program Files (x86)\Windows Live\Shared;C:\OrCAD\OrCAD_16.6_Lite\OpenAccess\bin\win32\opt;C:\OrCAD\OrCAD_16.6_Lite\tools\pcb\bin;C:\OrCAD\OrCAD_16.6_Lite\tools\fet\bin;C:\OrCAD\OrCAD_16.6_Lite\tools\Capture;C:\OrCAD\OrCAD_16.6_Lite\tools\PSpice;C:\OrCAD\OrCAD_16.6_Lite\tools\specctra\bin;C:\OrCAD\OrCAD_16.6_Lite\tools\bin;;C:\altera\14.0\modelsim_ase\win32aloem;C:\altera\13.1\modelsim_ase\win32aloem;C:\altera\13.0\modelsim_ase\win32aloem
+USERNAME=ylin
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 60 Stepping 3, GenuineIntel
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows NT 6.2 Build 9200 
+
+CPU:total 8 (4 cores per cpu, 2 threads per core) family 6 model 60 stepping 3, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, ht
+
+Memory: 4k page, physical 16678540k(13409340k free), swap 49184396k(45017184k free)
+
+vm_info: Java HotSpot(TM) Client VM (19.0-b09) for windows-x86 JRE (1.6.0_23-b05), built on Nov 12 2010 15:00:43 by "java_re" with MS VC++ 7.1 (VS2003)
+
+time: Tue Nov 25 08:49:14 2014
+elapsed time: 3 seconds
+

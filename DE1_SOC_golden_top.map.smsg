@@ -1,0 +1,34 @@
+Warning (10268): Verilog HDL information at i2c_touch_config.v(113): always construct contains both blocking and non-blocking assignments
+Info (10281): Verilog HDL Declaration information at DE1_SoC_QSYS_mm_interconnect_1_id_router.sv(48): object "DEFAULT_WR_CHANNEL" differs only in case from object "default_wr_channel" in the same scope
+Info (10281): Verilog HDL Declaration information at DE1_SoC_QSYS_mm_interconnect_1_id_router.sv(49): object "DEFAULT_RD_CHANNEL" differs only in case from object "default_rd_channel" in the same scope
+Info (10281): Verilog HDL Declaration information at DE1_SoC_QSYS_mm_interconnect_1_addr_router.sv(48): object "DEFAULT_WR_CHANNEL" differs only in case from object "default_wr_channel" in the same scope
+Info (10281): Verilog HDL Declaration information at DE1_SoC_QSYS_mm_interconnect_1_addr_router.sv(49): object "DEFAULT_RD_CHANNEL" differs only in case from object "default_rd_channel" in the same scope
+Info (10281): Verilog HDL Declaration information at DE1_SoC_QSYS_mm_interconnect_0_id_router_004.sv(48): object "DEFAULT_WR_CHANNEL" differs only in case from object "default_wr_channel" in the same scope
+Info (10281): Verilog HDL Declaration information at DE1_SoC_QSYS_mm_interconnect_0_id_router_004.sv(49): object "DEFAULT_RD_CHANNEL" differs only in case from object "default_rd_channel" in the same scope
+Info (10281): Verilog HDL Declaration information at DE1_SoC_QSYS_mm_interconnect_0_id_router.sv(48): object "DEFAULT_WR_CHANNEL" differs only in case from object "default_wr_channel" in the same scope
+Info (10281): Verilog HDL Declaration information at DE1_SoC_QSYS_mm_interconnect_0_id_router.sv(49): object "DEFAULT_RD_CHANNEL" differs only in case from object "default_rd_channel" in the same scope
+Info (10281): Verilog HDL Declaration information at DE1_SoC_QSYS_mm_interconnect_0_addr_router.sv(48): object "DEFAULT_WR_CHANNEL" differs only in case from object "default_wr_channel" in the same scope
+Info (10281): Verilog HDL Declaration information at DE1_SoC_QSYS_mm_interconnect_0_addr_router.sv(49): object "DEFAULT_RD_CHANNEL" differs only in case from object "default_rd_channel" in the same scope
+Warning (10268): Verilog HDL information at i2c_touch_config.v(113): always construct contains both blocking and non-blocking assignments
+Info (10281): Verilog HDL Declaration information at alt_vipitc131_IS2Vid.sv(99): object "TRS" differs only in case from object "trs" in the same scope
+Info (10281): Verilog HDL Declaration information at alt_vipitc131_IS2Vid.sv(63): object "INTERLACED" differs only in case from object "interlaced" in the same scope
+Info (10281): Verilog HDL Declaration information at alt_vipitc131_IS2Vid.sv(64): object "AP_LINE" differs only in case from object "ap_line" in the same scope
+Info (10281): Verilog HDL Declaration information at alt_vipitc131_IS2Vid.sv(72): object "H_BLANK" differs only in case from object "h_blank" in the same scope
+Info (10281): Verilog HDL Declaration information at alt_vipitc131_IS2Vid.sv(82): object "F_RISING_EDGE" differs only in case from object "f_rising_edge" in the same scope
+Info (10281): Verilog HDL Declaration information at alt_vipitc131_IS2Vid.sv(83): object "F_FALLING_EDGE" differs only in case from object "f_falling_edge" in the same scope
+Warning (10268): Verilog HDL information at alt_vipitc131_IS2Vid_mode_banks.sv(413): always construct contains both blocking and non-blocking assignments
+Info (10281): Verilog HDL Declaration information at alt_vipitc131_IS2Vid_mode_banks.sv(8): object "INTERLACED" differs only in case from object "interlaced" in the same scope
+Info (10281): Verilog HDL Declaration information at alt_vipitc131_IS2Vid_mode_banks.sv(21): object "AP_LINE" differs only in case from object "ap_line" in the same scope
+Info (10281): Verilog HDL Declaration information at alt_vipitc131_IS2Vid_mode_banks.sv(23): object "F_RISING_EDGE" differs only in case from object "f_rising_edge" in the same scope
+Info (10281): Verilog HDL Declaration information at alt_vipitc131_IS2Vid_mode_banks.sv(24): object "F_FALLING_EDGE" differs only in case from object "f_falling_edge" in the same scope
+Info (10281): Verilog HDL Declaration information at alt_vipitc131_common_generic_count.v(3): object "MAX_COUNT" differs only in case from object "max_count" in the same scope
+Info (10281): Verilog HDL Declaration information at alt_vipitc131_common_generic_count.v(4): object "RESET_VALUE" differs only in case from object "reset_value" in the same scope
+Warning (10268): Verilog HDL information at alt_vipitc131_common_sync_generation.v(59): always construct contains both blocking and non-blocking assignments
+Warning (10236): Verilog HDL Implicit Net warning at DE1_SOC_golden_top.v(273): created implicit net for "MTL_DCLK"
+Warning (10236): Verilog HDL Implicit Net warning at DE1_SOC_golden_top.v(432): created implicit net for "MTL_TOUCH_I2C_SDA"
+Warning (10236): Verilog HDL Implicit Net warning at DE1_SOC_golden_top.v(433): created implicit net for "MTL_TOUCH_I2C_SCL"
+Warning (10236): Verilog HDL Implicit Net warning at DE1_SOC_golden_top.v(434): created implicit net for "MTL_TOUCH_INT_n"
+Warning (10236): Verilog HDL Implicit Net warning at alt_vipvfr131_prc.v(142): created implicit net for "master_clock"
+Warning (10236): Verilog HDL Implicit Net warning at alt_vipvfr131_prc.v(143): created implicit net for "master_reset"
+Warning (10236): Verilog HDL Implicit Net warning at hps_sdram_p0_acv_hard_io_pads.v(289): created implicit net for "dqs_busout"
+Warning (10236): Verilog HDL Implicit Net warning at hps_sdram_pll.sv(168): created implicit net for "pll_dr_clk"

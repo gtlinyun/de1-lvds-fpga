@@ -1,0 +1,27 @@
+Info: Starting: Create block symbol file (.bsf)
+Info: ip-generate --project-directory=C:/altera/13.1/project/MTL_HPS-test/ --output-directory=C:/altera/13.1/project/MTL_HPS-test/DE1_SoC_QSYS/ --report-file=bsf:C:/altera/13.1/project/MTL_HPS-test/DE1_SoC_QSYS.bsf --system-info=DEVICE_FAMILY="Cyclone V" --system-info=DEVICE=5CSEMA5F31C6 --system-info=DEVICE_SPEEDGRADE=6 --component-file=C:/altera/13.1/project/MTL_HPS-test/DE1_SoC_QSYS.qsys
+Progress: Loading MTL_HPS-test/DE1_SoC_QSYS.qsys
+Progress: Reading input file
+Progress: Adding clk_50 [clock_source 13.1]
+Progress: Parameterizing module clk_50
+Progress: Adding timer [altera_avalon_timer 13.1]
+Progress: Parameterizing module timer
+Progress: Adding onchip_memory2 [altera_avalon_onchip_memory2 13.1]
+Progress: Parameterizing module onchip_memory2
+Progress: Adding jtag_uart [altera_avalon_jtag_uart 13.1]
+Progress: Parameterizing module jtag_uart
+Progress: Adding sysid [altera_avalon_sysid_qsys 13.1]
+Progress: Parameterizing module sysid
+Progress: Adding pll_sys [altera_pll 13.1]
+Progress: Parameterizing module pll_sys
+Progress: Adding hps_0 [altera_hps 13.1]
+Progress: Parameterizing module hps_0
+Progress: Adding alt_vip_itc_0 [alt_vip_itc 13.1]
+Progress: Parameterizing module alt_vip_itc_0
+Progress: Adding alt_vip_vfr_0 [alt_vip_vfr 13.1]
+Progress: Parameterizing module alt_vip_vfr_0
+Progress: Adding TERASIC_MULTI_TOUCH_0 [TERASIC_MULTI_TOUCH 1.0]
+Progress: Parameterizing module TERASIC_MULTI_TOUCH_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating

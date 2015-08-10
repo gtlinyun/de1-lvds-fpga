@@ -1,0 +1,37 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  EXCEPTION_ACCESS_VIOLATION (0xc0000005) at pc=0x6d8980f5, pid=8900, tid=6268
+#
+# JRE version: 6.0_23-b05
+# Java VM: Java HotSpot(TM) Client VM (19.0-b09 mixed mode windows-x86 )
+# Problematic frame:
+# V  [jvm.dll+0xa80f5]
+#
+# If you would like to submit a bug report, please visit:
+#   http://java.sun.com/webapps/bugreport/crash.jsp
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x27813400):  VMThread [stack: 0x27a80000,0x27ad0000] [id=6268]
+
+siginfo: ExceptionCode=0xc0000005, reading address 0x037d9708
+
+Registers:
+EAX=0x037d9708, EBX=0x237d935c, ECX=0x27acfa2c, EDX=0x237d935c
+ESP=0x27acf768, EBP=0x27acf770, ESI=0x27acfa2c, EDI=0x237d935c
+EIP=0x6d8980f5, EFLAGS=0x00010283
+
+Register to memory mapping:
+
+EAX=0x037d9708
+0x037d9708 is pointing to unknown location
+
+EBX=0x237d935c
+{constant pool} 
+ - klass: {other class}
+ - cache: 0x237daa20
+ -   1 :  : "" {0x23651260}
+ -   2 :  : "<<ALL FILES>>" {0x237dac78}
+ -   3 :  : 

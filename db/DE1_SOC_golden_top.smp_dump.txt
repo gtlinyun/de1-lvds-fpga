@@ -1,0 +1,86 @@
+
+State Machine - |DE1_SOC_golden_top|DE1_SoC_QSYS:u0|DE1_SoC_QSYS_mm_interconnect_0:mm_interconnect_0|altera_merlin_burst_adapter:burst_adapter_005|altera_merlin_burst_adapter_full:altera_merlin_burst_adapter_full.the_ba|state
+Name state.ST_IDLE state.ST_UNCOMP_WR_SUBBURST state.ST_UNCOMP_TRANS state.ST_COMP_TRANS 
+state.ST_IDLE 0 0 0 0 
+state.ST_COMP_TRANS 1 0 0 1 
+state.ST_UNCOMP_TRANS 1 0 1 0 
+state.ST_UNCOMP_WR_SUBBURST 1 1 0 0 
+
+State Machine - |DE1_SOC_golden_top|DE1_SoC_QSYS:u0|DE1_SoC_QSYS_mm_interconnect_0:mm_interconnect_0|altera_merlin_burst_adapter:burst_adapter_004|altera_merlin_burst_adapter_full:altera_merlin_burst_adapter_full.the_ba|state
+Name state.ST_IDLE state.ST_UNCOMP_WR_SUBBURST state.ST_UNCOMP_TRANS state.ST_COMP_TRANS 
+state.ST_IDLE 0 0 0 0 
+state.ST_COMP_TRANS 1 0 0 1 
+state.ST_UNCOMP_TRANS 1 0 1 0 
+state.ST_UNCOMP_WR_SUBBURST 1 1 0 0 
+
+State Machine - |DE1_SOC_golden_top|DE1_SoC_QSYS:u0|DE1_SoC_QSYS_mm_interconnect_0:mm_interconnect_0|altera_merlin_burst_adapter:burst_adapter_003|altera_merlin_burst_adapter_full:altera_merlin_burst_adapter_full.the_ba|state
+Name state.ST_IDLE state.ST_UNCOMP_WR_SUBBURST state.ST_UNCOMP_TRANS state.ST_COMP_TRANS 
+state.ST_IDLE 0 0 0 0 
+state.ST_COMP_TRANS 1 0 0 1 
+state.ST_UNCOMP_TRANS 1 0 1 0 
+state.ST_UNCOMP_WR_SUBBURST 1 1 0 0 
+
+State Machine - |DE1_SOC_golden_top|DE1_SoC_QSYS:u0|DE1_SoC_QSYS_mm_interconnect_0:mm_interconnect_0|altera_merlin_burst_adapter:burst_adapter_002|altera_merlin_burst_adapter_full:altera_merlin_burst_adapter_full.the_ba|state
+Name state.ST_IDLE state.ST_UNCOMP_WR_SUBBURST state.ST_UNCOMP_TRANS state.ST_COMP_TRANS 
+state.ST_IDLE 0 0 0 0 
+state.ST_COMP_TRANS 1 0 0 1 
+state.ST_UNCOMP_TRANS 1 0 1 0 
+state.ST_UNCOMP_WR_SUBBURST 1 1 0 0 
+
+State Machine - |DE1_SOC_golden_top|DE1_SoC_QSYS:u0|DE1_SoC_QSYS_mm_interconnect_0:mm_interconnect_0|altera_merlin_burst_adapter:burst_adapter_001|altera_merlin_burst_adapter_full:altera_merlin_burst_adapter_full.the_ba|state
+Name state.ST_IDLE state.ST_UNCOMP_WR_SUBBURST state.ST_UNCOMP_TRANS state.ST_COMP_TRANS 
+state.ST_IDLE 0 0 0 0 
+state.ST_COMP_TRANS 1 0 0 1 
+state.ST_UNCOMP_TRANS 1 0 1 0 
+state.ST_UNCOMP_WR_SUBBURST 1 1 0 0 
+
+State Machine - |DE1_SOC_golden_top|DE1_SoC_QSYS:u0|DE1_SoC_QSYS_mm_interconnect_0:mm_interconnect_0|altera_merlin_burst_adapter:burst_adapter|altera_merlin_burst_adapter_full:altera_merlin_burst_adapter_full.the_ba|state
+Name state.ST_IDLE state.ST_UNCOMP_WR_SUBBURST state.ST_UNCOMP_TRANS state.ST_COMP_TRANS 
+state.ST_IDLE 0 0 0 0 
+state.ST_COMP_TRANS 1 0 0 1 
+state.ST_UNCOMP_TRANS 1 0 1 0 
+state.ST_UNCOMP_WR_SUBBURST 1 1 0 0 
+
+State Machine - |DE1_SOC_golden_top|DE1_SoC_QSYS:u0|TERASIC_MULTI_TOUCH:terasic_multi_touch_0|i2c_touch_config:i2c_touch_config_inst|i2c_touch_controller:u_i2c_touch_controller|i2c_state
+Name i2c_state.STOP i2c_state.DATA_R i2c_state.S_ADDR_R i2c_state.R_ADDR_W i2c_state.S_ADDR_W i2c_state.START 
+i2c_state.START 0 0 0 0 0 0 
+i2c_state.S_ADDR_W 0 0 0 0 1 1 
+i2c_state.R_ADDR_W 0 0 0 1 0 1 
+i2c_state.S_ADDR_R 0 0 1 0 0 1 
+i2c_state.DATA_R 0 1 0 0 0 1 
+i2c_state.STOP 1 0 0 0 0 1 
+
+State Machine - |DE1_SOC_golden_top|DE1_SoC_QSYS:u0|alt_vipvfr131_vfr:alt_vip_vfr_0|alt_vipvfr131_vfr_controller:controller|state
+Name state.WAITING_END_FRAME state.SENDING_GO_AND_ENABLE_INTERRUPT state.SENDING_TYPE state.SENDING_WORDS state.SENDING_SAMPLES state.SENDING_ADDRESS state.IDLE 
+state.IDLE 0 0 0 0 0 0 0 
+state.SENDING_ADDRESS 0 0 0 0 0 1 1 
+state.SENDING_SAMPLES 0 0 0 0 1 0 1 
+state.SENDING_WORDS 0 0 0 1 0 0 1 
+state.SENDING_TYPE 0 0 1 0 0 0 1 
+state.SENDING_GO_AND_ENABLE_INTERRUPT 0 1 0 0 0 0 1 
+state.WAITING_END_FRAME 1 0 0 0 0 0 1 
+
+State Machine - |DE1_SOC_golden_top|DE1_SoC_QSYS:u0|alt_vipvfr131_vfr:alt_vip_vfr_0|alt_vipvfr131_prc:prc|alt_vipvfr131_prc_core:prc_core|state
+Name state.ENDING state.RUNNING state.WAITING state.IDLE 
+state.IDLE 0 0 0 0 
+state.WAITING 0 0 1 1 
+state.RUNNING 0 1 0 1 
+state.ENDING 1 0 0 1 
+
+State Machine - |DE1_SOC_golden_top|DE1_SoC_QSYS:u0|alt_vipitc131_IS2Vid:alt_vip_itc_0|alt_vipitc131_IS2Vid_statemachine:statemachine|state_int
+Name state_int.INSERT_ANC state_int.WAIT_FOR_ANC state_int.WAIT_FOR_SYNCH state_int.SYNCHED state_int.FIND_MODE state_int.INTERLACING state_int.HEIGHT_0 state_int.HEIGHT_1 state_int.HEIGHT_2 state_int.HEIGHT_3 state_int.WIDTH_0 state_int.WIDTH_1 state_int.WIDTH_2 state_int.WIDTH_3 state_int.FIND_SOP 
+state_int.FIND_SOP 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+state_int.WIDTH_3 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 
+state_int.WIDTH_2 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 
+state_int.WIDTH_1 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 
+state_int.WIDTH_0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 
+state_int.HEIGHT_3 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 
+state_int.HEIGHT_2 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+state_int.HEIGHT_1 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 
+state_int.HEIGHT_0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 
+state_int.INTERLACING 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 
+state_int.FIND_MODE 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 
+state_int.SYNCHED 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 
+state_int.WAIT_FOR_SYNCH 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 
+state_int.WAIT_FOR_ANC 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state_int.INSERT_ANC 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
